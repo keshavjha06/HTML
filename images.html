@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images</title>
+    <style>
+      body {
+        background-color: #414141;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://images.pexels.com/photos/14544821/pexels-photo-14544821.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+      width="200px"
+      height="200px"
+      alt="eiffel tower"
+    />
+    <img src="./lapto.jpeg" width="200px" height="200px" alt="no image" />
+    <picture>
+      <source media="(min-width: 650px" srcset="./HTMLcoure.jpeg" />
+      <source media="(min-width: 450px" srcset="./laptop2.jpeg" />
+      <img src="./lapto.jpeg" alt="no image" />
+    </picture>
+    <!-- an image map generator -->
+    <img src="laptop.jpeg" usemap="#image-map" />
+
+    <map name="image-map">
+      <area
+        onclick="one()"
+        target=""
+        alt=""
+        title=""
+        href=""
+        coords="533,233,752,378"
+        shape="rect"
+      />
+      <area
+        onclick="two()"
+        target=""
+        alt=""
+        title=""
+        href=""
+        coords="112,697,306,825"
+        shape="rect"
+      />
+    </map>
+    <script>
+      function one() {
+        alert("you clicked on one");
+      }
+      function two() {
+        alert("you clicked on two");
+      }
+    </script>
+  </body>
+</html>
